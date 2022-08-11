@@ -7,7 +7,7 @@
         <button v-if="editMode" type="submit">EDIT ITEM</button>
         <button v-else type="submit">ADD ITEM</button>
     </form>
-    <ToDoItem v-for="(task, index) in todos" :key="index" :task=task :index=index @editClicked="editTask" :editMode=editMode />
+    <ToDoItem v-for="(task, index) in todos" :key="index" :task="task" :index=index @editClicked="editTask" :editMode=editMode />
   </div>
 </template>
 
